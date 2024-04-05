@@ -1,0 +1,44 @@
+image: node:14
+
+stages:
+  - build
+  - test
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+build_job:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+  only:
+    - main
+
+test_job:
+  stage: test
+  script:
+    - npm run lint
+    - npm test
+  only:
+    - main
+
+deploy_job:
+  stage: deploy
+  environment:
+    name: production
+    url: https://yourproduction.environment
+  script:
+    - echo "Deploying to production server"
+    # Add your deployment script here
+    # For example, using SCP to copy files over to a server
+    # - scp -r build/* user@your-server:/path/to/destination
+  only:
+    - main
