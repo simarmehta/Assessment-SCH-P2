@@ -91,3 +91,21 @@ Integrate continuous deployment into the `deploy_job` section of your `.gitlab-c
 
 ## Conclusion
 This guide has walked you through the process of developing, testing, and deploying a Node.js application within a virtual environment, leveraging GitLab CI/CD for efficient deployment practices. This approach ensures your development process is streamlined and consistent across different environments.
+
+
+## GitLab Link and Screenshots
+
+Here are the required details for this- 
+
+https://gitlab.com/g16162114/schealth
+
+Image1-
+![image](https://github.com/simarmehta/Assessment-SCH-P2/assets/70880900/e97b1756-13ba-4076-86d4-ca63d9adf1a5)
+
+Build Deploy Test Pass-
+
+![image](https://github.com/simarmehta/Assessment-SCH-P2/assets/70880900/d6eb1c0b-ac89-4298-8e1e-f439da9242c2)
+
+![image](https://github.com/simarmehta/Assessment-SCH-P2/assets/70880900/8ab1bb78-8901-4aa7-bc7c-fd76cf62e14b)
+
+
